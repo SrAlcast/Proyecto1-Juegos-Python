@@ -1,28 +1,28 @@
-# Proyecto Módulo 1
+# Proyecto Módulo 1 GAME ZONE
 
 ![imagen](https://www.rotulatumismo.com/47000-large_default/neon-game-zone.jpg))
 
 ## Introducción
 
-¡Bienvenido a nuestro primer proyecto! En este proyecto, una empresa nos ha contactado para desarrollar una serie de videojuegos clásicos utilizando Python. A continuación, se describen brevemente los juegos seleccionados y cómo se implementó la consola de selección de juegos.
+¡Bienvenido a mi primer proyecto! En este proyecto, una empresa me ha contactado para desarrollar una serie de videojuegos clásicos utilizando Python. A continuación, se describen brevemente los juegos seleccionados y cómo se implementó la consola de selección de juegos.
 
 ## Juegos Seleccionados
 
-### 1. Preguntados
+### 1. Piedra, Papel, Tijera, Lagarto, Spock
 
-En este juego, los jugadores responden a una serie de preguntas de diversas categorías (cultura general, historia, entretenimiento, etc.). El objetivo es responder correctamente 10 preguntas seguidas. Si el jugador falla en alguna pregunta, el juego termina.
+Los jugadores eligen entre cinco opciones y se determina el ganador según las reglas del juego. Gana el primero que alcance tres victorias. Este juego es una variante divertida del clásico piedra, papel y tijera, incorporando más opciones.
 
 ### 2. Tres en Raya
 
 Este clásico juego de estrategia se juega en un tablero de 3x3. Dos jugadores (el usuario y la máquina) se turnan para colocar sus símbolos (X o O) en el tablero. El primero en alinear tres símbolos en horizontal, vertical o diagonal gana la partida.
 
-### 3. Ahorcado
+### 3. Preguntados
+
+En este juego, los jugadores responden a una serie de preguntas de diversas categorías (cultura general, historia, entretenimiento, etc.). El objetivo es responder correctamente 10 preguntas seguidas. Si el jugador falla en alguna pregunta, el juego termina.
+
+### 4. Ahorcado
 
 El jugador intenta adivinar una palabra secreta eligiendo letras. Cada vez que el jugador falla, se dibuja una parte del personaje en la horca. El juego termina cuando el jugador adivina la palabra completa o se completa el dibujo del ahorcado.
-
-### 4. Piedra, Papel, Tijera, Lagarto, Spock
-
-Los jugadores eligen entre cinco opciones y se determina el ganador según las reglas del juego. Gana el primero que alcance tres victorias. Este juego es una variante divertida del clásico piedra, papel y tijera, incorporando más opciones.
 
 ### 5. Hundir la Flota (Descartado)
 
@@ -47,3 +47,12 @@ Para instalar y ejecutar el proyecto en tu máquina local, sigue estos pasos:
 1. **Clona el repositorio**:
    ```bash
    git clone [URL del repositorio]
+   
+2. **Navega a la carpeta del proyecto**:
+   ```bash
+   cd [nombre-del-proyecto]
+
+2. **Ejecuta el programa**:
+   ```bash
+   python src/menu_juegos.py
+
