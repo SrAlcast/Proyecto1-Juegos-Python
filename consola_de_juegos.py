@@ -1,4 +1,4 @@
-# Archivo: menu_juegos.py
+# Archivo: consola_de_juegos.py
 from src.piedra_papel_tijera import PiedraPapelTijeraLagartoSpock
 from src.TresenRaya import TresEnRaya
 from src.Preguntados import Preguntados
@@ -20,20 +20,19 @@ def elegir_juego():
         if opcion == '1':
             juego = PiedraPapelTijeraLagartoSpock()
             juego.jugarPiedraPapelTijeraLagartoSpock()
-        elif opcion == '2':  # Cambiado a 'elif'
+        elif opcion == '2':  
             juego = TresEnRaya()
             juego.jugartresenraya()
-        elif opcion == '3':  # Cambiado a 'elif'
+        elif opcion == '3': 
             juego = Preguntados()
             juego.jugarpreguntados()
-        elif opcion == '4':  # Cambiado a 'elif'
+        elif opcion == '4': 
             juego = Ahorcado()
             juego.jugarAhorcado()
-        elif opcion == '5':  # Opción para salir
+        elif opcion == '5': 
             print("\nSaliendo del programa. ¡Hasta la próxima!")
             break
         else:
-            print("Opción no válida. Por favor, elige una opción entre 1 y 5.")
+            print("Opción no válida. Por favor, elige una opción entre 1 y 5.\n")
 
-# Iniciar el menú de selección de juegos
 elegir_juego()

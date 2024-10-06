@@ -130,7 +130,7 @@ class Ahorcado:
         while respuesta_reinicio:
             if respuesta_reinicio == "si":
                 print("Has respondido que si\n-------------------------------------\n")
-                self.__init__()  # Reiniciar el juego
+                self.__init__()
                 self.jugarAhorcado()
             if respuesta_reinicio == "no":
                 print("\n\033[1m---- GAME OVER ----\033[1m")

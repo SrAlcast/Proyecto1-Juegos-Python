@@ -178,29 +178,29 @@ class Preguntados:
                     break
                 else:
                     print(f"\nTu respuesta es:{respuesta}")
-                    print(f"Respuesta incorrecta. ¡Has perdido!la respuesta era la:{Pregunta.opcion_correcta}")
-                    print("\n¿Quieres jugar de nuevo? (si/no)\n")
-                    self.respuesta_reinicio=input("¿Quieres jugar de nuevo? (si/no):")
+                    print(f"Respuesta incorrecta. ¡Has perdido!la respuesta correcta era la:{Pregunta.opcion_correcta}")
+                    self.jugar_nuevamente()
                     break
-            break
         else:
             print(f"\n\033[1m¡Felicidades has ganado!\033[0m\nHas respondido {self.opcion_correctas} preguntas correctamente.\n")
-            print("¿Quieres jugar de nuevo? (si/no)")
-            self.respuesta_reinicio=input("¿Quieres jugar de nuevo? (si/no):")
-        while self.respuesta_reinicio:
-            if self.respuesta_reinicio == 'si':
-                print("Has respondido que si\n-------------------------------------\n")
+            self.jugar_nuevamente()
+
+    def jugar_nuevamente(self):
+        print("\n¿Quieres jugar de nuevo? (si/no)\n")
+        respuesta_reinicio = input("¿Quieres jugar otra partida? (si/no): ").lower()
+        while respuesta_reinicio:
+            if respuesta_reinicio == "si":
+                print("Has respondido que si\n\n-------------------------------------\n")
                 self.reset()
-            elif self.respuesta_reinicio == "no":
-                print("\033[1m----GAME OVER----\033[1m")
+                self.jugarpreguntados()
+            if respuesta_reinicio == "no":
+                print("\n\033[1m---- GAME OVER ----\033[1m\n")
                 break
             else:
-                print("Opción no válida.Responde 'si' o 'no'.")
-                self.respuesta_reinicio=input("¿Quieres jugar de nuevo? (si/no)")
+                print("Respuesta no valida. Responde 'si' o 'no'")
+                respuesta_reinicio = input("¿Quieres jugar otra partida? (si/no): ")
 
     def reset(self):
         self.opcion_correctas = 0
         self.respuesta_reinicio = ""
         self.jugarpreguntados()
-
-
