@@ -193,6 +193,7 @@ class Preguntados:
                 print("Has respondido que si\n\n-------------------------------------\n")
                 self.reset()
                 self.jugarpreguntados()
+                break
             if respuesta_reinicio == "no":
                 print("\n\033[1m---- GAME OVER ----\033[1m\n")
                 break
